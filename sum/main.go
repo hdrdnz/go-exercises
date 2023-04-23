@@ -1,11 +1,12 @@
+// Package clause
 package main
 
 import "fmt"
 
-func topla(a int, b int) int {
+func sum(a int, b int) int {
 	return a + b
 }
 
 func main() {
-	fmt.Println(topla(2, 5))
+	fmt.Println(sum(2, 5))
 }
