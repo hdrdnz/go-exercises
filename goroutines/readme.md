@@ -1,4 +1,4 @@
- ## Goroutine
+ # Goroutine
  ### Concurrency
  
   + Tek işlem birimi veya sıralı işleme kullanarak sistemin yanıt süresini azaltmak için kullanılan bir tekniktir.
