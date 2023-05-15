@@ -9,4 +9,20 @@
 
 ## Çapraz Platform Dosya Yolları
 + Çapraz Platform: birden fazla işletim sisteminde dağıtımı olan yazılımlardır.
-+ Bir işletim sisteminde dosyanın veya dizinin yolunu belirtmek için taksim veya ters-taksim işaretleri kullanırız. Fakat yazağımız program çapraz-platformsa ise <p>os.PathSeperator'ı</p> kullanabiliriz.
++ Bir işletim sisteminde dosyanın veya dizinin yolunu belirtmek için taksim veya ters-taksim işaretleri kullanırız. Fakat yazağımız program çapraz-platformsa ise <b>os.PathSeperator </b>kullanabiliriz.
+
+```go
+package main
+
+import (
+	"fmt"
+	"os"
+)
+
+func main() {
+	s := string(os.PathSeparator)
+	yol := "dosyalar" + s + "muzikler"
+	fmt.Println(yol)
+}
+
+```
