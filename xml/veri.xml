@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<üyeler>
+    <üye tip="admin">
+        <isim>Ahmet</isim>
+        <sosyal>
+            <facebook>https://facebook.com</facebook>
+            <twitter>https://twitter.com</twitter>
+            <youtube>https://youtube.com</youtube>
+        </sosyal>
+    </üye>
+    <üye tip="okuyucu">
+        <isim>Mehmet</isim>
+        <sosyal>
+            <facebook>https://facebook.com</facebook>
+            <twitter>https://twitter.com</twitter>
+            <youtube>https://youtube.com</youtube>
+        </sosyal>
+    </üye>
+</üyeler>
