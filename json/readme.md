@@ -15,5 +15,6 @@
 ### UNMARSHALL
 + Unmarshal işlemi amaç olarak marshal işleminin tam tersidir.
 + JSON formatındaki veriyi go struct'ına dönüştürür.
++ bir API’ dan gelen JSON verimize ait özellikleri (attribute) tam olarak bilmeseydik go verimizin <b>map[string]interface{}</b> türünde olması gerekir.
 
 

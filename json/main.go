@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 )
 
 type kisi struct {
@@ -20,6 +21,16 @@ func main() {
 	//go tipini json tipine dönüştürülür.
 	veri, hata := json.Marshal(murat)
 	veri2, err := json.MarshalIndent(murat, " 1", "    ")
+	jsonVeri := []byte(`{"İsim":"Ahmet","Soyisim":"Ak","Yas":65}`)
+	var goVeri kisi
+	//json tipindeki veri go structına dönüştürülür.
+	error := json.Unmarshal(jsonVeri, &goVeri)
+
+	if error != nil {
+		log.Fatalln(error)
+	}
+
+	fmt.Printf("İsim:%s \n Soyisim:%s\n Yas:%d", goVeri.İsim, goVeri.Soyisim, goVeri.Yas)
 
 	if hata != nil {
 		panic(hata)
